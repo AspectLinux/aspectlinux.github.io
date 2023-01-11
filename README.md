@@ -1,2 +1,2 @@
-# aspectos.github.io
+# aspectlinux.github.io
 The official website for AspectOS
