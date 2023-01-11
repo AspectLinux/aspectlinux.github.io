@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400;900&display=swap" rel="stylesheet"> 
+
+    <!--Our CSS-->
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/AspectOS/aspectos.github.io/main/images/aspectos-logo.png">
+
+    <title>What?</title>
+</head>
+    <body>
+        <nav class="navbar navbar-light fade-main navbar-expand-lg footer-bg small-border-radius">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">AspectOS</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="/">Home</a>
+                        <a class="nav-link" href="/about">About</a>
+                        <a class="nav-link" href="/downloads">Download</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-md">
+        <h1 class="text-danger"><strong>What? (403)</strong></h1>
+        <p>So we just checked, and the page you tried to go to is off limits. (I know, we were estranged by that truth aswell)<br><strong>While the page is off limits, feel free to...</strong>
+        <li><a href="/">Go home</a> 🏠</li>
+        <li><a href="https://findtheinvisiblecow.com/">Find the invisible cow</a> 🐮</li>
+        <li>Make an issue on our <a href="https://github.com/AspectOS/aspectos.github.io/issues/new">Github repository</a> 😲</li>
+        <li>Check your spelling in the URL bar ⬆️</li>
+        <li onclick="look()">Ask for permission 🤔</li>
+        <br>
+        <div id="looks" class="card-body"></div>
+        </p>
+        </div>
+        
+        <!--Bootstrap Javascript-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+    <script>
+        const looks = ["No.", "I will give you $100 if you stop.", "Never gonna give you up, never gonna let you down, never gonna let you in, just <a href='/'>go home</a>", "We can't let you in this page, but I can assure you, it's a feature.", "Hippity hoppity, this page is private property."]
+        function look() {
+            var random = Math.floor(Math.random() * looks.length);
+            document.getElementById("looks").innerHTML = looks[random];
+        }
+    </script>
+
+<div class="container my-5">
+  <footer class="text-center text-lg-start text-black">
+    <div class="container p-4 pb-0 footer-bg small-border-radius">
+      <section class="">
+        <div class="row text">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold footer-text">
+              AspectOS
+            </h6>
+            <p class="footer-text">
+              The Future Starts Here.
+            </p>
+          </div>
+
+          <hr class="w-100 clearfix d-md-none">
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold footer-text">
+              Useful links
+            </h6>
+            <p>
+              <a href="https://scratch.mit.edu/discuss/topic/581571">Forum</a>
+            </p>
+            <p>
+              <a href="https://github.com/aspectos">Github</a>
+            </p>
+            <button id="toggle" class="btn btn-outline-secondary" class="footer-text">Toggle Theme</button>
+          </div>
+
+          <hr class="w-100 clearfix d-md-none">
+
+        </div>
+      </section>
+
+      <hr class="my-3">
+
+      <section class="p-3 pt-0">
+        <div class="text d-flex align-items-center">
+        <div class="text row d-flex align-items-center">
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <div class="p-3 copyright-text">
+              © 2022 Copyright:
+              <a href="/" class="copyright">AspectOS</a>
+
+            </div>
+            </div>
+        </div>
+      </section>
+    </div>
+  </footer>
+  </div>
+    
+    <!--Bootstrap Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+        <script type="text/javascript" src="script.js"></script>
+      </body>
+</html>
